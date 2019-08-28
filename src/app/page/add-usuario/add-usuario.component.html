@@ -1,1 +1,35 @@
-<p>add-usuario works!</p>
+<section>
+        <form (ngSubmit)= "onsubmit()">
+                <div class="form-group">
+                  <label></label>
+                  <input type="text" class="form-control"  placeholder="Nome" [(ngModel)] = "usuario.Nome"name = "nome" >
+                  <small id="emailHelp" class="form-text text-muted">Nós não vamos compartilhar seu E-mail com ninguém.</small>
+                   
+                </div>
+                
+                <div class="form-group">
+                        <label></label>
+                        <input type="text" class="form-control"  placeholder="E-mail" [(ngModel)] = "usuario.email "name="email">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                      </div>
+
+                 <div class="form-group">
+                    <label></label>
+                    <input type="password" class="form-control"  placeholder="Senha" [(ngModel)] = "usuario.senha" name="senha">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                 </div>
+                
+                 <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" class="form-control"  placeholder="confirmar senha">
+
+                       
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                
+                <div class="form-group form-check">
+                  <button type= "submit" class="btn btn-primary"> Salvar</button>
+                  <button type= "reset" class="btn btn-primary"> cancelar</button>
+                </div>
+              </form>
+</section>

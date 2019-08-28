@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './model/usuario';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lojaAngular';
+  usuario: Array<Usuario>;
+   constructor(){}
+
+   ngOnInt(){
+
+   }
+onsubmit(){
+  console.log(this.usuario)
+}
+
 }
